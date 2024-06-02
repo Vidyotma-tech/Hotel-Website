@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Leela Mahal | Membership</title>
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno&family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  <!-- Styling for Membership page -->
+
+  <style media="screen">
+    body {
+      margin: 0;
+    }
+
+    #top-bar h1 {
+      position: absolute;
+      left: 60px;
+      top: 130px;
+      /* padding: 150px 0 0 80px; */
+    }
+
+    #top-bar h2 {
+      position: absolute;
+      left: 60px;
+      top: 340px;
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 25px;
+      /* padding: 150px 0 0 80px; */
+    }
+
+    #top-bar a {
+      position: absolute;
+      left: 60px;
+      top: 380px;
+      /* font-family: sans-serif;
+      border: solid #fff 2px; */
+    }
+
+    #top-bar {
+      background-image: url("https://www.greavesindia.co.uk/wp-content/uploads/2016/11/Greaves_The_Oberoi_Udaivilas.jpg");
+      height: 625px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    h1 {
+      color: #917122;
+    }
+
+    h5 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      text-align: left;
+      font-family: Montserrat;
+    }
+
+    .top {
+      padding-top: 16px;
+      font-weight: bold;
+    }
+
+    #about_us {
+      background-color: white;
+    }
+
+    #about_us p {
+      text-align: left;
+    }
+
+    #about_us h2 {
+      text-align: center;
+      font-family: "Italianno";
+      font-size: 55px;
+      font-style: italic;
+      color: #917122;
+    }
+
+    .about_us_img {
+      margin-top: 100px;
+    }
+
+    .about_us_img:hover {
+      box-shadow: 0 0 10px #000;
+    }
+
+    ul li {
+      /* margin-left: 5px; */
+      text-align: left;
+      color: rgba(55, 58, 54, 0.8);
+      font-weight: 300;
+      font-size: 17px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 440px auto auto auto;
+      grid-template-rows: 150px 100px 120px 100px 100px 100px;
+      grid-gap: 2px;
+      /* background-color: #f2f2f3; */
+      background-color: #fff;
+      padding: 5px;
+      margin-bottom: 100px;
+      box-shadow: 0 0 10px #f2f2f3;
+    }
+
+    .grid-container>div {
+      background-color: #f2f2f2;
+      /* background-color: white; */
+      text-align: center;
+      font-size: 15px;
+      mrgin-left: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .grid-container img {
+      height: 90px;
+      width: 180px;
+      border-radius: 10px;
+      padding: 5px;
+      margin-top: 10px;
+    }
+
+    img:hover {
+      box-shadow: 0 0 0 #fff;
+    }
+
+    .member {
+      width: 100%;
+    }
+
+    .table {
+      display: block;
+    }
+
+    .front {
+      height: 50px;
+      width: 50px;
+      display: inline;
+      margin-top: 30px;
+
+    }
+
+    .front img {
+      height: 50px;
+      width: 50px;
+      float: left;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+
+    .desc {
+      margin-top: 0px;
+      padding-top: 10px;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    .other {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section id="nav-bar">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" style="font-weight:600;" href="#"><img class="logo" src="images/logo.png" alt="">Leela Mahal</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#testimonial">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#top-bar">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <button class="btn btn-info btn-sm" type="submit">Book Now</button> -->
+          <a style="margin-top: 0;" class="Button" href="rooms.html">Book Now</a>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="top-bar">
+    <div>
+      <h1>Join Leela Mahal <br> Rewards</h1>
+      <h2>Get exclusive benefits and great rewards with every stay</h2>
+      <!-- <button class="Button" type="button" name="button">Join Now</button> -->
+      <a class="Button" href="Join_Membership.html">Join Now</a>
+      <!-- <a style="margin-top: 0;" class="Button" href="#top-bar">Book Now</a> -->
+    </div>
+  </section>
+
+  <!-- about rewards section -->
+  <section id="about_us">
+    <div class="row">
+      <div class="col-lg-6 about_us_text">
+        <h2>Welcome to Leela Mahal Rewards</h2>
+        <p>
+          Leela Mahal rewards program offers an enhanced experience from booking to check-out and every moment. Enjoy excellent offers and the
+          ability to earn and redeem rewards remarkably fast. Benefits for our valued members include:
+        </p>
+        <ul>
+          <li><strong>Award Nights:</strong> Starting at 15,000 points with no blackout dates on Standard Rooms.</li>
+          <li><strong>Elite status:</strong> Starting at nine eligible nights or six eligible stays.</li>
+          <li><strong>Members Only Rate:</strong> As a Leela Mahal Rewards member, you’ll save up to 10% on the best available rate when you book directly on our website</li>
+          <li><strong>Complimentary water:</strong> Members receive two bottles of complimentary water with every stay.</li>
+          <li><strong>Valuable redemption options:</strong> Redeem your points for Award Nights, airline miles, and more!</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6">
+        <!-- <img class="about_us_img" src="https://i.redd.it/k07gxjt4l5y51.jpg"> -->
+        <img class="about_us_img" src="https://media.istockphoto.com/photos/mature-couple-explores-a-ghat-at-sunrise-looks-out-across-lake-while-picture-id1203569899?b=1&k=20&m=1203569899&s=170667a&w=0&h=6dca3YUtt20kGIzTqOs6pobseDLrDrmVplPbR9GrCvI=">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Members benifits -->
+
+  <div class="container">
+    <h2 style="color: #917122; font-style: italic; font-family: Italianno; font-size: 60px;">Member Benifits</h2>
+    <div class="grid-container">
+      <div></div>
+      <div>
+        <img src="images\silver.jpg">
+        <p class="top">Silver</p>
+      </div>
+      <div>
+        <img src="images\gold.jpg">
+        <p class="top">Gold</p>
+      </div>
+      <div>
+        <img src="images\platinum.jpg">
+        <p class="top">Platinum</p>
+      </div>
+
+      <div>
+        <div class="front">
+          <img src="https://png.pngitem.com/pimgs/s/377-3779152_income-distribution-svg-png-save-money-icon-white.png" alt="">
+        </div>
+        <h5>Members Only Rate</h5>
+        <p class="desc">Members save up to 10% more when booking directly on our website or mobile app.</p>
+      </div>
+      <div class="other">6</div>
+      <div class="other">7</div>
+      <div class="other">8</div>
+      <div>
+        <div class="front">
+          <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/briefcase-512.png" alt="" style="margin-bottom: 40px; margin-top: 40px;">
+        </div>
+        <h5>Points for hotel stays</h5>
+        <p class="desc">Earn points per US dollar spent on eligible stays and food and beverage purchases charged to your room during an eligible stay.</p>
+      </div>
+      <div class="other">20/$1</div>
+      <div class="other">11</div>
+      <div class="other">12</div>
+      <div>
+        <div class="front">
+          <img src="https://www.vhv.rs/dpng/d/177-1775678_jjsh-food-and-beverage-comments-food-and-beverage.png" alt="">
+        </div>
+        <h5>Discounts on food & beverage</h5>
+        <p class="desc">Receive food and beverage discounts at participating hotel restaurants.²</p>
+      </div>
+      <div class="other">14</div>
+      <div class="other">15</div>
+      <div class="other">16</div>
+      <div>
+        <div class="front">
+          <img src="https://icon-library.com/images/bed-icon-transparent/bed-icon-transparent-14.jpg" alt="">
+        </div>
+        <h5>Award Nights</h5>
+        <p class="desc">Redeem for Award Nights starting at 15,000 points with no blackout dates on Standard Rooms.</p>
+      </div>
+      <div class="other">18</div>
+      <div class="other">19</div>
+      <div class="other">20</div>
+      <div>
+        <div class="front">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNt5bWN-8npzpjx0KuD9tgiRhKUfrmcNYxN99d6uatxcJCkRJRrxSbo53lEm2WSHq2oM4&usqp=CAU" alt="">
+        </div>
+        <h5>In-room welcome gift</h5>
+        <p class="desc">Available to Elite members during eligible stays.</p>
+      </div>
+      <div class="other">21</div>
+      <div class="other">22</div>
+      <div class="other">23</div>
+    </div>
+  </div>
+
+</body>
+
+
+<!-- Footer -->
+<footer id="footer" class=" text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <h6><em>CONNECT WITH US</em></h6>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-warning btn-floating rounded-circle m-1 rounded-circle" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #E2C784">
+    <h6>© 2021 Copyright</h6>
+    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->

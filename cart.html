@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Leela Mahal | Cart</title>
+
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+	<!-- Google Fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno&family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<!-- CSS stylesheet -->
+	<link rel="stylesheet" href="style/cart_style.css">
+
+	<!-- bootstrap script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<!-- jquery script -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<style media="screen">
+	.Button{
+		margin-top: 0;
+	}
+
+	#top-bar{
+	  /*width:  100%;*/
+	  /*background-image: url("images/gold_pattern.png");*/
+	  background-image: url("images/cart_bg.jpg");
+	/* -ms-background-position-x: center;
+	-ms-background-position-y: bottom;
+	background-position: center;
+	background-size: cover; */
+	/*height: 350px;*/
+	/*background-color: blue;*/
+	/*display: flex;*/
+	/*justify-content: center;*/
+	  opacity: 0.8;
+	}
+	/*#top-bar h1{*/
+		/*z-index: 1;*/
+	/*} */
+</style>
+
+
+<!-- body part -->
+
+<body>
+
+
+	<section id="nav-bar">
+		<div class="container-fluid">
+
+			<!-- Nav Bar -->
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<a class="navbar-brand" style="font-weight:600;" href="#"><img class="logo" src="images/logo.png" alt="">Leela Mahal</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#testimonial">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="membership.html">Membership</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact us.html">Contact Us</a>
+						</li>
+					</ul>
+					<!-- <button class="btn btn-info btn-sm" type="submit">Book Now</button> -->
+					<a class="Button" href="rooms.html">Book Now</a>
+				</div>
+			</nav>
+
+		</div>
+	</section>
+
+
+
+	<section id="top-bar">
+		<h1>Reservation Desk</h1>
+	</section>
+
+
+	<div class="page">
+		<div class="container_left">
+			<div class="guest_dets">
+					<h2>Guest Details</h2>
+					<form>
+						<input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+						<input type="text" name="last_name"  id="last_name" placeholder="Last Name">
+						<div class="error_cont">
+							<div class="err_cont1">
+							<p class="error_msg" id="fname_err">Please enter a valid first name</p>
+							</div>
+							<div class="err_cont2">
+							<p class="error_msg" id="lname_err">Please enter a valid last name</p>
+							</div>
+						</div>
+						<input type="text" name="phone_no" id="phone_no" placeholder="Mobile Number">
+						<input type="text" name="email_id" id="email_id" placeholder="Email-Id">
+						<div class="error_cont">
+							<div class="err_cont1">
+								<p class="error_msg" id="mobno_err">Please enter a valid mobile number</p>
+							</div>
+							<div class="err_cont2">
+								<p class="error_msg" id="email_err">Please enter a valid email id</p>
+							</div>
+						</div>
+					</form>
+					<hr>
+
+					<h2 style="margin-bottom: 8px;">Card Details</h2>
+					<p>(to guarantee reservation)</p>
+					<form>
+						<p style="text-align: left; margin-left: 7%;"><b>Payment Method: </b> Credit Card</p>
+						<input type="text" name="card_number" placeholder="Card Number">
+						<input type="text" name="card_name" placeholder="Name on Card">
+						<div class="error_cont">
+							<div class="err_cont1">
+								<p class="error_msg" id="cardno_err">Please enter a valid card number</p>
+							</div>
+
+							<div class="err_cont1">
+								<p class="error_msg" id="cardname_err">Please enter a valid name</p>
+							</div>
+						</div>
+						<label for="card_exp_date" style=" margin-left: 7%; margin-right: 4%;">Expiry Date </label>
+						<select id="card_exp_mon" name="card_exp_mon" style="color: grey;" >
+						    <option value="place_holder" style="color: lightgrey;">MM</option>
+						    <option value="01">Jan</option>
+						    <option value="02">Feb</option>
+						    <option value="03">Mar</option>
+						    <option value="04">Apr</option>
+						    <option value="05">May</option>
+						    <option value="06">June</option>
+						    <option value="07">July</option>
+						    <option value="08">Aug</option>
+						    <option value="09">Sep</option>
+						    <option value="10">Oct</option>
+						    <option value="11">Nov</option>
+						    <option value="12">Dec</option>
+						</select>
+						<select id="card_exp_yr" name="card_exp_yr" style="color: grey;">
+						    <option value="place_holder" style="color: lightgrey;">YY</option>
+						    <option value="2021">2021</option>
+						    <option value="2022">2022</option>
+						    <option value="2023">2023</option>
+						    <option value="2024">2024</option>
+						    <option value="2025">2025</option>
+						    <option value="2026">2026</option>
+						    <option value="2027">2027</option>
+						    <option value="2028">2028</option>
+						    <option value="2029">2029</option>
+						    <option value="2030">2030</option>
+						    <option value="2031">2031</option>
+						</select>
+						<div class="error_cont">
+							<div class="err_cont1">
+								<p class="error_msg" id="expdt_err">This card expires too early for this future booking, please recheck.</p>
+							</div>
+						</div>
+					</form>
+					<br>
+			</div>
+			<div class="policies">
+				<h2>Policies</h2>
+					<table style="width: 60%; text-align: left; margin-left: 5%">
+						<tr><th>Check-in</th>
+							<td>After 2:00 PM</td>
+						</tr>
+						<tr><th>Check-out</th>
+							<td>Before 12:00 PM</td>
+						</tr>
+					</table>
+					<br>
+				<p style="text-align: left; margin-left: 5%">
+					<b>Guarantee Policy</b><br>
+					Credit Card Guarantee required at the time of reservation. <br><br>
+					<b>Cancellation Policy</b><br>
+					Reservation can be cancelled 01 day prior to arrival without incurring any penalty charge.
+				</p>
+			</div>
+
+			<div class="acknow">
+				<h2>Acknowledgement</h2>
+					<label class="container"> * I agree with the Privacy Policy.
+					  <input type="checkbox" id="acknow_chk">
+					  <span class="checkmark"></span>
+					</label>
+					<div class="error_cont">
+							<p class="error_msg" id="acknow_err">Please check this box to continue</p>
+					</div>
+				<p >By completing this booking, I agree with the Booking Conditions.</p>
+			</div>
+
+			<div class="reserve_cont">
+				<input type="submit" value ="Complete Booking" id="cmp_booking">
+			</div>
+		</div>
+
+		<div class="bill" style="height: 600px;" >
+			<h2>Your Stay</h2>
+			<table style="width: 100%; text-align: center;">
+				<tr>
+					<th>Check-in</th>
+					<th>Check-out</th>
+				</tr>
+				<tr>
+					<td>
+						After 2:00 PM
+					</td>
+					<td>
+						Before 12:00 PM
+					</td>
+				</tr>
+			</table>
+			<hr>
+			<p style="text-align: left;" id="stay_dur"><b>Stay Durationn: </b>day, mon, yr - Sun, Oct 24, 2021</p>
+			<p style="text-align: left;" id="no_of_guests"><b>No. of Guests:</b>2 Adults<br></p>
+
+			<h5>Package Details</h5>
+			<table style="width: 90%; margin-left: 2%;">
+				<tr>
+					<td id="room_type">Premier Room: King Bed</td>
+					<td style="text-align: right;" id="room_type_pc">₹103,000.00</td>
+				</tr>
+				<tr>
+					<td id="service_type">Dine Under The Stars</td>
+					<td style="text-align: right;" id="service_type_pc">₹12,000.00</td>
+				</tr>
+				<tr>
+					<td>Goods & Services Tax (18%)</td>
+					<td style="text-align: right;" id="tax_pc">₹20,700.00</td>
+				</tr>
+			</table>
+			<hr>
+			<table style="width: 80%; margin-left: 8%;">
+				<tr>
+					<th style="text-align: left; font-size: 18px;">Total :</th>
+					<td style="text-align: right; font-size: 18px;" id="total_amt">₹103,000.00<br></td>
+				</tr>
+				<th></th>
+				<td  style="text-align: right; font-size: 12px;">(INR tax included)</td>
+			</table>
+		</div>
+
+
+	</div>
+
+	<script src="js/cart.js" charset="utf-8"></script>
+
+</body>
+
+<!-- Footer -->
+<footer id="footer" class=" text-center">
+	<!-- Grid container -->
+	<div class="container p-4 pb-0">
+		<h6><em>CONNECT WITH US</em></h6>
+		<!-- Section: Social media -->
+		<section class="mb-4">
+			<!-- Facebook -->
+			<a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+			<!-- Twitter -->
+			<a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+			<!-- Google -->
+			<a class="btn btn-outline-warning btn-floating rounded-circle m-1 rounded-circle" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+			<!-- Instagram -->
+			<a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+
+		</section>
+		<!-- Section: Social media -->
+	</div>
+	<!-- Grid container -->
+
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: #E2C784">
+		<h6>© 2021 Copyright</h6>
+		<!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+	</div>
+	<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Leela Mehal | Rooms</title>
+
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno&family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<!-- CSS stylesheet -->
+	<link rel="stylesheet" href="style/style.css">
+
+	<!-- bootstrap script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<!-- jquery script -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <style media="screen">
+
+    #top-bar h1{
+      position: absolute;
+      left: 50px;
+      top: 100px;
+      /* padding: 150px 0 0 80px; */
+    }
+    #top-bar{
+      background-image: url("https://media.radissonhotels.net/image/radisson-brand/guestroom/16256-115887-f64430522_3xl.jpg?impolicy=HomeHero");
+    }
+    h1{
+      color: #917122;
+    }
+
+    #top-bar .trans-bg{
+      width: 1263.330px;
+      height: 700px;
+      background: #000000;
+      opacity: 0.4;
+    }
+
+
+
+    #room-types{
+      background-color: #F4F2F3;
+      padding: 100px 0;
+    }
+    .container{
+      background-color: white;
+    }
+    .room-text{
+      padding: 65px;
+    }
+    .room-img{
+      padding: 0;
+    }
+    #room-types .image{
+      width: 100%;
+      height: 100%;
+    }
+    #room-types p{
+      text-align: left;
+    }
+    .room-price{
+      font-size: 3rem;
+      color: #917122;
+    }
+		#book-now-popup{
+			width: 30%;
+			height: 100px;
+			z-index: 1;
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 35%;
+			background-color: #fff;
+			box-shadow: 0 0 10px #000;
+			padding: 1%;
+		}
+		#book-now-popup button{
+			padding: 2px 20px;
+			border-color: lightblue;
+		}
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <section id="nav-bar">
+		<div class="container-fluid">
+
+			<!-- Nav Bar -->
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<a class="navbar-brand" style="font-weight:600;" href="#"><img class="logo" src="images/logo.png" alt="">Leela Mahal</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#testimonial">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="membership.html">Membership</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact us.html">Contact Us</a>
+						</li>
+					</ul>
+					<!-- <button class="btn btn-info btn-sm" type="submit">Book Now</button> -->
+					<a style="margin-top: 0;" class="Button" href="#top-bar">Book Now</a>
+				</div>
+			</nav>
+
+		</div>
+	</section>
+
+
+  <section id="top-bar">
+    <div class="trans-bg">
+      <h1>Enjoy Luxury <br> Experience</h1>
+    </div>
+  </section>
+
+
+	<!-- Check Availabilty section -->
+	<section id="check_availability">
+		<div class="card">
+
+			<div class="card_container">
+				<table width="100%">
+					<tr>
+						<th width="20%">Check In</th>
+						<th width="20%">Check Out</th>
+						<th width="20%">Adults</th>
+						<th width="20%">Children</th>
+						<th width="20%" rowspan="2"> <a href="rooms.html"> <button class="btn btn-dark" type="button">View Availability</button></a> </th>
+					</tr>
+					<td><input type="date"></td>
+					<td><input type="date"></td>
+					<td>
+						<select name="rooms" id="rooms">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">3+</option>
+						</select>
+					</td>
+					<td>
+						<select name="rooms" id="rooms">
+							<option value="">0</option>
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">3+</option>
+						</select>
+					</td>
+					<tr>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+
+
+
+<!-- All types of rooms -->
+  <section id="room-types">
+		<h1 style="font-family: 'Italianno', cursive; font-size: 70px; text-align:center; padding-bottom:2%;">Check Rooms details</h1>
+    <div class="container">
+
+			<div id="book-now-popup">
+				<h6>Do you also want add-on-services?</h6>
+				<a href="services.html#service_carousel"><button class="add-on-yes" style="background-color:#255F7A; margin-left:150px; margin-top:10px; color:#fff;">Yes</button></a>
+				<a href="cart.html"><button class="add-on-no" style="background-color: #fff; color:blue;" type="submit" name="button">No</button></a>
+			</div>
+
+			<div class="row">
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$99</span> /per night</span>
+          <h4>Single Bed Rooms</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="#">Book Now</a>
+        </div>
+	        <div class="col-md-6 room-img">
+	          <img class="image" src="https://media.architecturaldigest.com/photos/59d3deb44ed72079cea3bc3a/master/w_1600%2Cc_limit/small-bedroom-ideas-03.jpeg" alt="">
+	        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://5.imimg.com/data5/DF/LN/OI/SELLER-42874186/whatsapp-image-2020-04-13-at-11-14-34-am-1--500x500.jpeg" alt="">
+        </div>
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$149</span> /per night</span>
+          <h4>Double Bed Rooms</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$149</span> /per night</span>
+          <h4>Two Single Bed Rooms</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://preview.colorlib.com/theme/casahotel/img/img_1.jpg.webp" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://www.regalhotel.com/uploads/rrh/accommodations/720x475/Family-Triple-Room-1.jpg" alt="">
+        </div>
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$199</span> /per night</span>
+          <h4>Triple Bed Rooms</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$249</span> /per night</span>
+          <h4>Double Double Bed Rooms</h4>
+          <p>
+            For 4 peoples <br>
+            A Room with two double beds. And can accommodate two elder and 2 kids easily. <br>
+            The room size is 65m².
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://www.alokikresort.com/image/room-twinbed1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://www.independent.ie/life/travel/bb560/40861168.ece/AUTOCROP/w620/Mill%20Park%20Donegal.jpeg" alt="">
+        </div>
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$299</span> /per night</span>
+          <h4>Family Bedrooms</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$349</span> /per night</span>
+          <h4>Executive Rooms</h4>
+          <p>
+            A room connected with two bedrooms <br>
+            The room size is 80m². <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://www.legacybangkok.com/en/media/img/executive/ex-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 room-img">
+          <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-s/1a/48/2f/2b/presidential-suite-two.jpg" alt="">
+        </div>
+        <div class="col-md-6 room-text">
+          <span> <span class="room-price">$699</span> /per night</span>
+          <h4>President Suite</h4>
+          <p>
+            A president suite with two bedrooms and a living space with a strong emphasis on grand in-room decoration, high-quality amenities and supplies, and tailor-made services. <br>
+            The room size is 200m². <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate deserunt repellendus autem! Incidunt, cupiditate
+            minus ad ipsam eos laudantium eum harum ut consequatur eligendi, accusantium reprehenderit quo saepe neque.
+          </p>
+          <a class="Button" href="cart.html">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+	<script>
+	$("#room-types .Button").click(function(e){
+		e.preventDefault();
+		$("#book-now-popup").css('display','block');
+	});
+	</script>
+</body>
+
+
+
+<!-- Footer -->
+<footer id="footer" class=" text-center">
+  <!-- Grid container -->
+  <div style="background-color: #f2f2f2;" class="container p-4 pb-0">
+    <h6><em>CONNECT WITH US</em></h6>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-warning btn-floating rounded-circle m-1 rounded-circle" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #E2C784">
+    <h6>© 2021 Copyright</h6>
+    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>

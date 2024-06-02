@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Leela Mahal | Membership</title>
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno&family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <style media="screen">
+    body {
+      top-margin: 615px;
+      background-color: #f2f2f3;
+
+    }
+
+    #top-bar h1 {
+      position: absolute;
+      left: 60px;
+      top: 180px;
+      /* padding: 150px 0 0 80px; */
+    }
+
+    #top-bar h2 {
+      position: absolute;
+      left: 60px;
+      top: 450px;
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 25px;
+      /* padding: 150px 0 0 80px; */
+    }
+
+    #top-bar a {
+      position: absolute;
+      left: 60px;
+      top: 380px;
+      /* font-family: sans-serif;
+      border: solid #fff 2px; */
+    }
+
+    #top-bar {
+      background-image: url("http://hotel-advisors.com/wp-content/uploads/2019/05/Ultimate-Guide-to-Hotel-Membership.jpg");
+      height: 615px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    h1 {
+      color: #917122;
+    }
+
+    h5 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      text-align: left;
+      font-family: Montserrat;
+    }
+
+    .top {
+      padding-top: 16px;
+      font-weight: bold;
+    }
+
+    .Pinfo {
+      height: 600px;
+      width: 85%;
+      background-color: #fff;
+      margin: 100px;
+      border: 1px solid #f3f3f3;
+      box-shadow: 0 0 20px solid black;
+      position: relative;
+    }
+    .Morebenifits{
+      height: 350px;
+      width: 42.5%;
+      position: absolute;
+      top: 130px;
+      left: 50%;
+    }
+    .head {
+      height: 120px;
+      width: 100%;
+      background-color: #fff;
+      border-bottom: 1px solid #f2f2;
+      /* margin: 100px; */
+
+    }
+
+    .head h2 {
+      padding: 30px;
+      text-align: left;
+    }
+
+    .form-floating:focus-within {
+      z-index: 0.9;
+
+    }
+
+    .form-floating {
+      width: 40%;
+      margin-left: 20px;
+      /* border-bottom: 1px solid black; */
+
+    }
+
+    .form-control {
+      box-shadow: none !important;
+
+    }
+
+    .box {
+      border-top-width: 0px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      border-radius: 0px;
+      border-bottom: solid 1px #CACACA;
+      border-bottom-width: 2px;
+      /* margin-left: 10px; */
+      margin: 0 0 5px 10px;
+    }
+
+    .icon {
+      position: absolute;
+      top: 17px;
+      right: 20px;
+    }
+    .eye{
+      position: absolute;
+      top: 17px;
+      right: 30px;
+    }
+
+    .hide {
+      display: none;
+    }
+    .msg{
+    visibility: hidden;
+    color: red;
+    }
+    .msg1{
+    visibility: hidden;
+    color: red;
+    }
+    .msg2{
+    visibility: hidden;
+    color: red;
+    }
+    .msg3{
+    visibility: hidden;
+    color: red;
+    margin-left: 25px;
+    }
+    .icon:hover+.hide {
+      display: inline-block;
+      color: blue;
+
+    }
+    .Pinfo .Button{
+      position: absolute;
+      top: 75%;
+      left: 40%;
+      height: 50px;
+      font-size: 20px;
+
+    }
+    .error{
+      border-bottom-color: red;
+      border-bottom-width: 1px;
+    }
+    #popup{
+      width: 100%;
+      height: 100%;
+      display: none;
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+      background-color: rgba(0,0,0,0.9);
+    }
+    #popup .popup-img{
+      height: 80%;
+      width: 60%;
+      position: absolute;
+      top: 10%;
+      left: 16rem;
+    }
+    .popup-btn {
+      position: absolute;
+      border: none;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+    }
+    .popup-close-btn{
+       right: 15%;
+       top: 5%;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <section id="nav-bar">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" style="font-weight:600;" href="#"><img class="logo" src="images/logo.png" alt="">Leela Mahal</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#testimonial">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <button class="btn btn-info btn-sm" type="submit">Book Now</button> -->
+          <a style="margin-top: 0;" class="Button" href="rooms.html">Book Now</a>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="top-bar">
+    <div>
+      <h1>Join Leela Mahal <br> Rewards</h1>
+      <h2>The More You Stay, the more Rewarding It Gets</h2>
+
+    </div>
+  </section>
+
+
+  <!-- popup -->
+  <div  id="popup">
+    <div class="popup-close">
+      <button class="popup-btn popup-close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="">
+      <img class="popup-img" src="images/congratulations.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Personal Info -->
+  <div class="Pinfo">
+    <div class="head">
+      <h2 style="text-align: center;">Personal Information</h2>
+    </div>
+    <form id="myform">
+    <div class="form-floating">
+      <input type="text" class="form-control box" placeholder="FirstName" name="firstName" required >
+      <label>First Name</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control box" placeholder="LastName" name="lastName" required>
+      <label>Last Name</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control box" placeholder="eg. name@gamil.com" name="Email" required>
+      <label>Email address <span style="font-size: 12px;">(eg. name@gamil.com)</span></label>
+    </div>
+    <div class="msg3">
+      Email should be in this format: name@gmail.com
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control box" placeholder="Type Your Password" name="password" title="Password must contain 8 letters" required>
+      <label>Password</label>
+      <div class="icon">
+        <span style="float: right;"><i class="fas fa-info-circle"></i></span>
+      </div>
+      <div class="hide">Password must be between 8 and 20 characters, contain at least one number, one uppercase letter.</div>
+      <div class="eye">
+        <span style="float: right; margin-right: 20px;"><i class="fas fa-eye-slash togglePassword"></i></span>
+      </div>
+      <div class="msg">
+        Password must be between 8 and 20 characters.
+      </div>
+      <div class="msg1">
+        must contain atleast one number.
+      </div>
+      <div class="msg2">
+        must contain one uppercase letter.
+      </div>
+
+    </div>
+
+    <div class="Morebenifits">
+      <h5> ✅  Members Get More</h5>
+      <h6 style="margin-left: 25px; font-size: 15px;color: grey;">Members save up to 10% more when booking directly on our website or mobile app.</h6>
+      <br>
+      <h5> ✅  Points for Hotel Stays</h5>
+      <h6 style="margin-left: 25px; font-size: 15px;color: grey;">Earn points per Hundred spent on eligible stays and food and beverage purchases charged to your room during an eligible stay</h6>
+      <br>
+      <h5> ✅  Award Nights</h5>
+      <h6 style="margin-left: 25px;font-size: 15px; color: grey;">Redeem for Award Nights starting at 15,000 points with no blackout dates on Standard Rooms.</h6>
+      <br>
+      <a style="text-decoration-color: red; margin-left: 25px;" href="membership.html"><span style="color: red;">Discover all the benifits.</span></a>
+    </div>
+    <!-- <button id="submitBtn" class="Button popup-btn popup-close-btn" type="submit" name="button">Join</button> -->
+    <a id="submitBtn" type="submit" class="Button popup-btn" href="#popup" style="padding-top: 20px;">Join</a>
+
+  </div>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/join_membership.js" charset="utf-8"></script>
+</body>
+<!-- Footer -->
+<footer id="footer" class=" text-center">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <h6><em>CONNECT WITH US</em></h6>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-warning btn-floating rounded-circle m-1 rounded-circle" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-warning btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #E2C784">
+    <h6>© 2021 Copyright</h6>
+    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
